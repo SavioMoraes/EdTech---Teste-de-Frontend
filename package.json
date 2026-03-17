@@ -1,0 +1,22 @@
+{
+  "name": "frontend-test-edtech",
+  "version": "1.0.0",
+  "description": "Teste técnico frontend Edtech - implementação com HTML, CSS e Javascript",
+  "main": "html/index.html",
+  "scripts": {
+    "dev": "serve html",
+    "start": "serve html"
+  },
+  "keywords": [
+    "frontend",
+    "html",
+    "css",
+    "javascript",
+    "edtech"
+  ],
+  "author": "Sávio moreira de Moraes",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "14.2.0"
+  }
+}
