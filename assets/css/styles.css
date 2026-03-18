@@ -46,7 +46,7 @@ a {
 /* LAYOUT GERAL */
 .page-layout {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1280px !important;
   min-height: 3128px;
   height: 5903px;
   margin: o auto;
@@ -606,6 +606,7 @@ select:focus-visible {
 /* RESPONSIVIDADE */
 @media (max-width: 1366px) {
   .page-layout {
+    max-width: 1280px !important;
     width: 100%;
     height: auto;
   }
