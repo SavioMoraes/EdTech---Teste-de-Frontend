@@ -4,8 +4,8 @@
   "description": "Teste técnico frontend Edtech - implementação com HTML, CSS e Javascript",
   "main": "html/index.html",
   "scripts": {
-    "dev": "serve html",
-    "start": "serve html"
+    "dev": "serve .",
+    "start": "serve ."
   },
   "keywords": [
     "frontend",
