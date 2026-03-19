@@ -266,8 +266,10 @@ loadYouTubeApi();
 // SECTION SLIDER
 import { initSlider } from "./slider.js";
 import { initCards } from "./cards.js";
+import { initPodcast } from "./podcast.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 	initSlider();
 	initCards();
+	initPodcast();
 })
