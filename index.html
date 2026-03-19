@@ -130,7 +130,6 @@
 
     <main class="page-main">
       <div class="page-main__container">
-        <!-- <iframe src="https://www.youtube.com/embed/zrHgnN39zHY"></iframe> -->
         <section class="section section-video">
           <div class="section-video__header">
             <h2 class="section-video__title">
@@ -274,7 +273,62 @@
         </section>
   
         <section class="section section-slider">
-          <h2>Slider</h2>
+          <div class="section-slider__container">
+            <div class="section-slider__image-wrapper">
+              <div class="section-slider__track">
+                <figure>
+                  <img
+                    src="assets/images/landscape-morning-fog-mountains-with-hot-air-balloons-sunrise.png"
+                    alt="paisagem de nevoeiro matinal e montanhas com baloes de ar quente ao nascer do sol"
+                    class="section-slider__image"
+                  />
+                  <figcaption>Autor: tawatchai07 / Fonte: Freepik</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="assets/images/lot-rock-formations-covered-with-moss-near-sea-sunset-sky.png"
+                    alt="muitas formacoes rochosas cobertas de musgo perto do mar sob o ceu do por do sol"
+                    class="section-slider__image"
+                  />
+                  <figcaption>Autor: wirestock / Fonte: Freepik</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="assets/images/environment-scenic-angry-envelop-showing.png"
+                    alt="ambiente cenico mostrando envelope irritado"
+                    class="section-slider__image"
+                  />
+                  <figcaption>Autor: creativeart / Fonte: Freepik</figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="section-slider__controls">
+              <button
+                class="section-slider__arrow-button section-slider__arrow-button--prev"
+                id="prevBtn"
+                type="button"
+                aria-label="Slide anterior"
+              >
+                <span class="section-slider__arrow section-slider__arrow--left"></span>
+              </button>
+
+              <div class="section-slider__dots" id="dots">
+                <span class="section-slider__dot"></span>
+                <span class="section-slider__dot section-slider__dot--active"></span>
+                <span class="section-slider__dot"></span>
+              </div>
+
+              <button
+                class="section-slider__arrow-button section-slider__arrow-button--next"
+                id="nextBtn"
+                type="button"
+                aria-label="Próximo slide"
+              >
+                <span class="section-slider__arrow section-slider__arrow--right"></span>
+              </button>
+            </div>
+          </div>
         </section>
   
         <section class="section section-highlight">
@@ -313,6 +367,6 @@
       </div>
     </footer>
   </div>
-    <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
