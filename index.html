@@ -130,8 +130,121 @@
 
     <main class="page-main">
       <div class="page-main__container">
+        <!-- <iframe src="https://www.youtube.com/embed/zrHgnN39zHY"></iframe> -->
         <section class="section section-video">
-          <h2>Vídeo</h2>
+          <div class="section-video__header">
+            <h2 class="section-video__title">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            </h2>
+
+            <p class="section-video__description">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+          </div>
+
+          <div class="section-video__media" id="videoPlayerContainer">
+            <div id="youtube-player" class="section-video__iframe" data-video-id="zrHgnN39zHY"></div>
+
+            <div class="section-video__overlay"></div>
+
+            <div class="section-video__play-center">
+              <button
+                class="section-video__play-button"
+                id="videoCenterPlayButton"
+                type="button"
+                aria-label="Reproduzir ou pausar vídeo"
+              >
+                <span class="section-video__play-icon" id="videoCenterPlayIcon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                    <path d="M8 5v14l11-7z"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="section-video__controls">
+              <div class="section-video__controls-row">
+                <button
+                  class="section-video__control-button"
+                  id="videoPlayPauseButton"
+                  type="button"
+                  aria-label="Play ou pause"
+                >
+                  <span id="videoPlayPauseIcon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+
+                <div
+                  class="section-video__progress"
+                  id="videoProgressBar"
+                  role="slider"
+                  aria-label="Progresso do vídeo"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                  tabindex="0"
+                >
+                  <div class="section-video__progress-fill" id="videoProgressFill"></div>
+                </div>
+
+                <div class="section-video__time" id="videoTimeDisplay">0:00</div>
+
+                <button
+                  class="section-video__control-button"
+                  id="videoMuteButton"
+                  type="button"
+                  aria-label="Ativar ou desativar som"
+                >
+                  <span id="videoMuteIcon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                      <path d="M3 9v6h4l5 5V4L7 9H3z"></path>
+                      <path d="M16 7c1.5 1.5 1.5 8.5 0 10" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"></path>
+                      <path d="M19 4c3 3 3 13 0 16" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"></path>
+                    </svg>
+                  </span>
+                </button>
+
+                <div
+                  class="section-video__volume"
+                  id="videoVolumeBar"
+                  role="slider"
+                  aria-label="Volume"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="100"
+                  tabindex="0"
+                >
+                  <div class="section-video__volume-fill" id="videoVolumeFill"></div>
+                  <span class="section-video__volume-thumb" id="videoVolumeThumb"></span>
+                </div>
+
+                <button
+                  class="section-video__control-button"
+                  id="videoCaptionsButton"
+                  type="button"
+                  aria-label="Legendas"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                    <path d="M21 4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM10 15H8c-1.1 0-2-.9-2-2s.9-2 2-2h2v2H8v2h2v2zm6 0h-2c-1.1 0-2-.9-2-2s.9-2 2-2h2v2h-2v2h2v2z"></path>
+                  </svg>
+                </button>
+
+                <button
+                  class="section-video__control-button"
+                  id="videoFullscreenButton"
+                  type="button"
+                  aria-label="Tela cheia"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                    <path d="M7 14H5v5h5v-2H7zM19 19h-5v-2h3v-3h2zM7 7h3V5H5v5h2zM19 5h-5v2h3v3h2z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
   
         <section class="section section-side-image">
