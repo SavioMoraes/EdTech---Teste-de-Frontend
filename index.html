@@ -444,7 +444,10 @@
               type="button"
               aria-label="Reproduzir ou pausar áudio"
             >
-              <span class="section-podcast__play-icon section-podcast__play-icon--play" id="podcastPlayIcon"></span>
+              <span
+                class="section-podcast__play-icon section-podcast__play-icon--play"
+                id="podcastPlayIcon"
+              ></span>
             </button>
 
             <div
@@ -464,7 +467,17 @@
             <div class="section-podcast__time" id="podcastTime">03:03</div>
 
             <div class="section-podcast__volume-control">
-              <span class="section-podcast__volume-icon"></span>
+              <button
+                class="section-podcast__icon-button"
+                id="podcastMuteButton"
+                type="button"
+                aria-label="Ativar ou desativar som"
+              >
+                <span
+                  class="section-podcast__volume-icon"
+                  id="podcastVolumeIcon"
+                ></span>
+              </button>
 
               <div
                 class="section-podcast__volume"
@@ -481,14 +494,55 @@
               </div>
             </div>
 
-            <button
-              class="section-podcast__settings-button"
-              id="podcastSettingsButton"
-              type="button"
-              aria-label="Configurações"
-            >
-              <span class="section-podcast__settings-icon"></span>
-            </button>
+            <div class="section-podcast__settings-wrap">
+              <button
+                class="section-podcast__settings-button"
+                id="podcastSettingsButton"
+                type="button"
+                aria-label="Configurações"
+                aria-expanded="false"
+              >
+                <span class="section-podcast__settings-icon"></span>
+              </button>
+
+              <div
+                class="section-podcast__settings-menu"
+                id="podcastSettingsMenu"
+                hidden
+              >
+                <button
+                  type="button"
+                  class="section-podcast__settings-option"
+                  data-speed="0.75"
+                >
+                  Velocidade 0.75x
+                </button>
+
+                <button
+                  type="button"
+                  class="section-podcast__settings-option"
+                  data-speed="1"
+                >
+                  Velocidade 1x
+                </button>
+
+                <button
+                  type="button"
+                  class="section-podcast__settings-option"
+                  data-speed="1.25"
+                >
+                  Velocidade 1.25x
+                </button>
+
+                <button
+                  type="button"
+                  class="section-podcast__settings-option"
+                  data-speed="1.5"
+                >
+                  Velocidade 1.5x
+                </button>
+              </div>
+            </div>
           </div>
         </section>
   
