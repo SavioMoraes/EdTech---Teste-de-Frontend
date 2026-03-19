@@ -547,9 +547,80 @@
         </section>
   
         <section class="section section-discursive-activity">
-          <h2>Atividade discursiva</h2>
+          <div class="section-discursive-activity__container">
+            <div class="section-discursive-activity__header">
+              <div class="section-discursive-activity__icon-wrapper">
+                <span class="section-discursive-activity__icon"></span>
+              </div>
+
+              <div class="section-discursive-activity__header-content">
+                <div class="section-discursive-activity__title-wrapper">
+                  <h3 class="section-discursive-activity__title">Atividade discursiva</h3>
+                </div>
+
+                <div class="section-discursive-activity__description-wrapper">
+                  <p class="section-discursive-activity__description">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-discursive-activity__textarea-wrapper">
+              <div class="section-discursive-activity__textarea-inner">
+                <textarea
+                  class="section-discursive-activity__textarea"
+                  id="discursiveTextarea"
+                  placeholder="Digite sua resposta aqui..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="section-discursive-activity__actions">
+              <button
+                class="section-discursive-activity__button section-discursive-activity__button--answer"
+                id="discursiveAnswerButton"
+                type="button"
+              >
+                Responder
+              </button>
+
+              <button
+                class="section-discursive-activity__button section-discursive-activity__button--edit"
+                id="discursiveEditButton"
+                type="button"
+                disabled
+              >
+                Alterar
+              </button>
+            </div>
+
+            <div
+              class="section-discursive-activity__feedback"
+              id="discursiveFeedback"
+              hidden
+            >
+              <div class="section-discursive-activity__feedback-title-wrapper">
+                <h4 class="section-discursive-activity__feedback-title">É isso aí!</h4>
+              </div>
+
+              <div class="section-discursive-activity__feedback-text-wrapper">
+                <p class="section-discursive-activity__feedback-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur commodi odio maiores accusamus aspernatur consequatur ipsam dignissimos magnam hic, velit est perferendis explicabo aperiam ratione veritatis labore.
+                </p>
+              </div>
+
+              <button
+                class="section-discursive-activity__feedback-close"
+                id="discursiveFeedbackClose"
+                type="button"
+                aria-label="Fechar feedback"
+              >
+                <span class="section-discursive-activity__feedback-close-icon"></span>
+              </button>
+            </div>
+          </div>
         </section>
-  
         <section class="section section-objective-activity">
           <h2>Atividade Objetiva</h2>
         </section>
