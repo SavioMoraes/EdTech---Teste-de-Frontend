@@ -21,7 +21,6 @@
       <div class="page-header__gradient-blur"></div>
       <div class="page-header__overlay-blur"></div>
       <div class="page-header__container">
-        <!-- CAMADAS DECORATIVAS -->
         <div class="page-header__bg-grid"></div>
         <div class="page-header__bg-blur-left"></div>
         <div class="page-header__bg-blur-right"></div>
@@ -66,10 +65,8 @@
         <span class="page-header__circle page-header__circle--top-left-2"></span>
         <span class="page-header__circle page-header__circle--bottom"></span>
 
-        <!-- CONTAINER INTERNO -->
         <div class="page-header__inner">
           <div class="page-header__content">
-            <!-- BLOCO ESQUERDO -->
             <div class="page-header__content-left">
               <span class="page-header__accent-line"></span>
 
@@ -98,7 +95,6 @@
               </div>
             </div>
 
-            <!-- BLOCO DIREITO -->
             <div class="page-header__content-right">
               <div class="page-header__card">
                 <div class="page-header__card-top">
@@ -434,7 +430,66 @@
         </section>
   
         <section class="section section-podcast">
-          <h2>Podcast</h2>
+          <div class="section-podcast__container">
+            <audio
+              class="section-podcast__audio"
+              id="podcastAudio"
+              preload="metadata"
+              src="./assets/audio/pódcast.mp3"
+            ></audio>
+
+            <button
+              class="section-podcast__play-button"
+              id="podcastPlayButton"
+              type="button"
+              aria-label="Reproduzir ou pausar áudio"
+            >
+              <span class="section-podcast__play-icon section-podcast__play-icon--play" id="podcastPlayIcon"></span>
+            </button>
+
+            <div
+              class="section-podcast__progress"
+              id="podcastProgress"
+              role="slider"
+              aria-label="Progresso do áudio"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="65"
+              tabindex="0"
+            >
+              <div class="section-podcast__progress-fill" id="podcastProgressFill"></div>
+              <span class="section-podcast__progress-thumb" id="podcastProgressThumb"></span>
+            </div>
+
+            <div class="section-podcast__time" id="podcastTime">03:03</div>
+
+            <div class="section-podcast__volume-control">
+              <span class="section-podcast__volume-icon"></span>
+
+              <div
+                class="section-podcast__volume"
+                id="podcastVolume"
+                role="slider"
+                aria-label="Volume do áudio"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="66"
+                tabindex="0"
+              >
+                <div class="section-podcast__volume-fill" id="podcastVolumeFill"></div>
+                <span class="section-podcast__volume-thumb" id="podcastVolumeThumb"></span>
+              </div>
+            </div>
+
+            <button
+              class="section-podcast__settings-button"
+              id="podcastSettingsButton"
+              type="button"
+              aria-label="Configurações"
+            >
+              <span class="section-podcast__settings-icon"></span>
+            </button>
+          </div>
         </section>
   
         <section class="section section-discursive-activity">
