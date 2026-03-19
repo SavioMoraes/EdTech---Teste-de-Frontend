@@ -366,7 +366,7 @@ a {
   padding: 0 32px;
   width: 196.53px;
   height: 56px;
-  background: #76b900;
+  background: #0C0A08;
   box-shadow: 0 0 20px rgba(118, 185, 0, 0.3);
   border-radius: 4px;
   border: none;
@@ -376,6 +376,9 @@ a {
   flex-grow: 0;
 }
 
+.page-header__button:hover {
+  background: #76b900;
+}
 
 .page-header__button-text {
   width: 111.2px;
@@ -388,7 +391,7 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #0c0a08;
+  color: #ffffff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -398,18 +401,14 @@ a {
 .page-header__button-icon {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 0 0 0 8px;
   width: 21.33px;
   height: 13.33px;
-  color: #0c0a08;
+  color: #ffffff;
   flex: none;
   order: 1;
   flex-grow: 0;
-}
-
-.page-header__button:hover {
-  background: #8ed100;
 }
 
 .page-header__content-right {
@@ -772,7 +771,6 @@ a {
   transform: scale(1.5);
 }
 
-
 .section-video__play-icon {
   display: inline-flex;
   align-items: center;
@@ -1065,16 +1063,31 @@ a {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
+  background-color: #1c232f;
+  color: #E5E7EB;
 }
 
-.section-slider__arrow-button--prev {
-  border: 1px solid #e5e7eb;
-  background: #ffffff;
+.section-slider__arrow-button:disabled {
+  background: #E5E7EB;
+  color: #1c232f;
 }
 
+.section-slider__arrow-button--prev,
 .section-slider__arrow-button--next {
-  border: none;
   background: #1c232f;
+  border: none;
+}
+
+.section-slider__arrow-button--prev:hover,
+.section-slider__arrow-button--next:hover {
+  background: #76B900;
+  border: none;
+}
+
+.section-slider__arrow-button--prev:disabled,
+.section-slider__arrow-button--next:disabled {
+  background: #E5E7EB;
+  border: none;
 }
 
 .section-slider__arrow-button:hover:not(:disabled) {
@@ -1107,7 +1120,7 @@ a {
 }
 
 .section-slider__arrow--left {
-  color: #171d0c;
+  color: #ffffff;
 }
 
 .section-slider__arrow--left::before {
@@ -1136,14 +1149,18 @@ a {
 .section-slider__dot {
   width: 8px;
   height: 8px;
-  background-color: #e5e7eb;
+  background-color: #f3f4f6;
   border-radius: 9999px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
+.section-slider__dot:hover {
+  background-color: #76B900;
+}
+
 .section-slider__dot--active {
-  background-color: #171d0c;
+  background-color: #1c232f;
 }
 
 /* Seção Highlight */
@@ -1204,6 +1221,199 @@ a {
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+}
+
+/* Section Cards */
+.section-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-cards__container {
+  position: relative;
+  width: 960px;
+  height: 336px;
+  flex: none;
+  order: 4;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.section-cards__card {
+  position: absolute;
+  min-height: 320px;
+  bottom: 16px;
+  background: #f9fafb;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.section-cards__card--left {
+  left: 0;
+  right: 656px;
+  top: 0;
+}
+
+.section-cards__card--right {
+  left: 656px;
+  right: 0;
+  top: 0;
+}
+
+.section-cards__closed-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  min-height: 320px;
+  height: 100%;
+}
+
+.section-cards__icon-wrap {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-cards__icon {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #1e293b;
+}
+
+.section-cards__button-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0 0;
+  width: 102.92px;
+  height: 58px;
+}
+
+.section-cards__card--center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 1.52px;
+  min-height: 336px;
+  left: 320.4px;
+  right: 320.4px;
+  top: -8px;
+  bottom: 8px;
+  background: #0c0a08;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 3;
+  transform: translateY(8px);
+  transition: all 0.3s ease;
+}
+
+.section-cards__card--center.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.section-cards__expanded-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 252px;
+  height: 271px;
+}
+
+.section-cards__expanded-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 252px;
+  padding: 0 16.46px 30.4762px;
+}
+
+.section-cards__expanded-text p {
+  margin: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #d1d5db;
+}
+
+.section-cards__button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 32px;
+  height: 42px;
+  border-radius: 4px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.section-cards__button--open {
+  width: 102.92px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #334155;
+  font-weight: 400;
+}
+
+.section-cards__button--close {
+  width: 129.3px;
+  background: transparent;
+  border: 1px solid #4b5563;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.section-cards__button--open:hover:not(:disabled) {
+  background: #0c0a08;
+  color: #ffffff;
+  border-color: #0c0a08;
+}
+
+.section-cards__button--close:hover:not(:disabled) {
+  background: #ffffff;
+  color: #0c0a08;
+  border-color: #ffffff;
+}
+
+.section-cards__container.has-open-card .section-cards__card--left,
+.section-cards__container.has-open-card .section-cards__card--right {
+  opacity: 0.15;
+}
+
+.section-cards__button:focus-visible {
+  outline: 2px solid #1d4ed8;
+  outline-offset: 3px;
 }
 
 /* FOOTER */
