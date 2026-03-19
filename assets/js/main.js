@@ -262,3 +262,10 @@ if (fullscreenButton) {
 }
 
 loadYouTubeApi();
+
+// SECTION SLIDER
+import { initSlider } from "./slider.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+	initSlider();
+})
