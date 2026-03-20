@@ -3936,7 +3936,7 @@ body {
   }
 
   .section-objective-activity__button {
-    width: 30%%;
+    width: 100%;
   }
 
   .section-objective-activity__feedback {
@@ -3986,94 +3986,116 @@ body {
     width: 100%;
     max-width: 100%;
   }
+  
+  /* Header */
+   .page-header {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
 
   .page-header__container {
-    padding: 34px 12px 40px;
+    width: 100%;
+    height: auto;
+    min-height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 48px 0;
+  }
+
+  .page-header__inner {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
   }
 
   .page-header__content {
-    gap: 28px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .page-header__content-left {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .page-header__accent-line {
+    left: 50%;
+    top: -8px;
+    transform: translateX(-50%);
+  }
+
+  .page-header__heading-wrap {
+    align-items: center;
   }
 
   .page-header__title {
-    font-size: 30px;
-    line-height: 32px;
-    letter-spacing: -0.6px;
+    width: 100%;
+    height: auto;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
   }
 
   .page-header__description-wrap {
-    padding-left: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .page-header__description {
-    font-size: 14px;
-    line-height: 22px;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .page-header__actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .page-header__button {
-    width: 100%;
-    max-width: 100%;
-    height: 50px;
-    padding: 0 18px;
+    width: 212.66px;
   }
 
-  /* dashboard do header continua inteiro */
+  .page-header__content-right {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
   .page-header__card {
-    padding: 10px;
-    border-radius: 10px;
+    width: 496px;
+    max-width: 496px;
+    height: 372px;
+    transform: scale(0.62);
+    transform-origin: top center;
+    margin-bottom: -141px;
   }
 
-  .page-header__card-top {
-    padding-bottom: 10px;
-  }
-
-  .page-header__card-dots {
-    gap: 6px;
-    width: auto;
-  }
-
-  .page-header__dot {
-    width: 10px;
-    height: 10px;
-  }
-
-  .page-header__card-top-line {
-    width: 56px;
-    height: 6px;
-  }
-
-  .page-header__card-body {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .page-header__sidebar {
-    width: 100%;
-    min-width: 100%;
-  }
-
-  .page-header__sidebar-footer {
-    padding-top: 16px;
-  }
-
-  .page-header__main-panels {
-    width: 100%;
-  }
-
-  .page-header__chart {
-    height: 70px;
-  }
-
-  .page-header__panels-row {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .page-header__panel {
-    width: 100%;
-    height: 104px;
-  }
-
+  /* Main */
   .page-main {
     padding: 0 12px !important;
   }
@@ -4110,6 +4132,10 @@ body {
   .section-video__media {
     min-height: 210px;
     border-radius: 6px;
+  }
+
+  .section-video__iframe {
+    width: 351px;
   }
 
   .section-video__play-button {
@@ -4158,18 +4184,16 @@ body {
   }
 
   /* slider */
-  .section-slider__image {
-    min-height: 190px;
+  .section-slider {
+    width: 100%;
+    overflow: hidden;
   }
 
-  .section-slider__controls {
-    padding: 16px 8px;
-    gap: 10px;
-  }
-
-  .section-slider__arrow-button {
-    width: 34px;
-    height: 34px;
+  .section-slider__container {
+    width: 958px;
+    height: 529.88px;
+    transform: scale(calc(100vw / 958));
+    transform-origin: top left;
   }
 
   /* highlight */
@@ -4210,28 +4234,54 @@ body {
 
   /* podcast */
   .section-podcast__container {
-    padding: 12px 10px;
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+   .section-podcast__play-button {
+    order: 1;
+  }
+
+  .section-podcast__time {
+    order: 2;
+  }
+
+  .section-podcast__progress {
+    order: 3;
+    width: auto;
+  }
+
+  .section-podcast__volume-fill {
+    order: 4;
   }
 
   .section-podcast__volume-control {
-    width: 100%;
-    justify-content: space-between;
+    order: 3;
   }
 
-  .section-podcast__settings-menu {
-    right: 0;
-    min-width: 132px;
+  .section-podcast__settings-wrap {
+    order: 5;
   }
 
   /* discursive */
+  .section-discursive-activity__header-content {
+    width: 250px;
+  }
+
+  .section-discursive-activity__description {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    width: 230px;
+  }
   .section-discursive-activity__container {
-    padding: 18px 14px;
-    gap: 18px;
+    padding: 12px 8px;
+    gap: 12px;
   }
 
   .section-discursive-activity__header {
-    gap: 12px;
+    gap: 8px;
   }
 
   .section-discursive-activity__title {
@@ -4317,6 +4367,13 @@ body {
     padding: 24px 12px;
   }
 
+  .page-footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .page-footer__logo {
     width: 116px;
     height: auto;
@@ -4328,8 +4385,7 @@ body {
   }
 
   .page-footer__copyright {
-    width: 100%;
-    font-size: 10px;
-    line-height: 16px;
+    font-size: 14px;
+    padding-bottom: 20px;
   }
 }
