@@ -268,6 +268,7 @@ import { initCards } from "./cards.js";
 import { initPodcast } from "./podcast.js";
 import { initDiscursiveActivity } from "./discursive-activity.js";
 import { initObjectiveActivity } from "./objective-activity.js";
+import { initAccordion } from "./accordion.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 	initSlider();
@@ -275,4 +276,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	initPodcast();
   initDiscursiveActivity();
   initObjectiveActivity();
+  initAccordion();
 })
