@@ -1,7 +1,7 @@
 const App = {
 	init: () => {
 		console.log('App iniciado');
-		App.initSections;		
+		App.initSections();		
 	},
 
 	initSections: () => {

@@ -638,7 +638,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 128px;
+  padding: 0 128px !important;
   width: 1280px;
   height: 5030px;
   flex: none;
@@ -671,7 +671,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
+  padding: 64px;
   gap: 64px;
   width: 960px;
 }
@@ -2897,7 +2897,7 @@ select:focus-visible {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
   .page-layout {
     max-width: 1280px !important;
     width: 100%;
@@ -2977,4 +2977,4 @@ select:focus-visible {
   .section h2 {
     font-size: 1.125rem;
   }
-}
+} */
