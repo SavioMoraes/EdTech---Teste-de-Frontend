@@ -2808,16 +2808,82 @@ a {
 
 /* FOOTER */
 .page-footer {
-  width: 100%;
-  border-top: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 1280px;
+  min-height: 139px;
+  background: #0c0a08;
+  border-top: 1px solid #1e293b;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
 .page-footer__container {
-  width: 100%;
-  min-height: 139px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  padding: 48px 32px;
+  gap: 96px;
+  width: 1280px;
+  max-width: 1280px;
+  min-height: 138px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.page-footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 32px;
+  width: 1024px;
+  min-height: 42px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.page-footer__logo {
+  margin: 0 auto 0 0;
+  width: 145px;
+  height: 42px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.page-footer__logo-svg {
+  display: block;
+  width: 145px;
+  height: 42px;
+}
+
+.page-footer__copyright {
+  margin: 0 0 0 auto;
+  width: 325px;
+  min-height: 20px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #64748b;
+  text-align: right;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 /* ESTADOS DE FOCO */
