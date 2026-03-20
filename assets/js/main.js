@@ -267,10 +267,12 @@ import { initSlider } from "./slider.js";
 import { initCards } from "./cards.js";
 import { initPodcast } from "./podcast.js";
 import { initDiscursiveActivity } from "./discursive-activity.js";
+import { initObjectiveActivity } from "./objective-activity.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 	initSlider();
 	initCards();
 	initPodcast();
   initDiscursiveActivity();
+  initObjectiveActivity();
 })
