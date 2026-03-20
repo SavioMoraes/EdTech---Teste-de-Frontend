@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teste técnico de desenvolvimento de página web">
+    <title>Frontend Test EdTech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="page-layout">
+
+    <header class="page-header" aria-label="Cabeçalho da página">
+      <div class="page-header__gradient"></div>
+      <div class="page-header__gradient-blur"></div>
+      <div class="page-header__overlay-blur"></div>
+      <div class="page-header__container">
+        <div class="page-header__bg-grid"></div>
+        <div class="page-header__bg-blur-left"></div>
+        <div class="page-header__bg-blur-right"></div>
+
+        <div class="page-header__svg" aria-hidden="true">
+          <svg
+            class="page-header__svg-graphic"
+            width="1280"
+            height="744"
+            viewBox="0 0 1280 744"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#page-header-svg-clip)">
+              <path
+                d="M0 161.55C256 107.7 469.333 188.475 640 403.875C810.667 619.275 1024 700.05 1280 646.2"
+                stroke="#76B900"
+                stroke-width="2.08775"
+              />
+              <path
+                d="M0 403.875C341.333 350.025 597.333 376.95 768 484.65C938.667 592.35 1109.33 511.575 1280 242.325"
+                stroke="#76B900"
+                stroke-width="1.04387"
+              />
+              <path
+                opacity="0.5"
+                d="M1280 80.775C1024 242.325 725.333 376.95 384 484.65C42.6667 592.35 -85.3333 673.125 0 726.975"
+                stroke="#76B900"
+                stroke-width="1.56581"
+              />
+            </g>
+            <defs>
+              <clipPath id="page-header-svg-clip">
+                <rect width="1280" height="807.75" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+
+        <span class="page-header__circle page-header__circle--top-right"></span>
+        <span class="page-header__circle page-header__circle--top-left-1"></span>
+        <span class="page-header__circle page-header__circle--top-left-2"></span>
+        <span class="page-header__circle page-header__circle--bottom"></span>
+
+        <div class="page-header__inner">
+          <div class="page-header__content">
+            <div class="page-header__content-left">
+              <span class="page-header__accent-line"></span>
+
+              <div class="page-header__heading-wrap">
+                <h1 class="page-header__title">
+                  Lorem ipsum dolor, sit <span>amet</span>
+                </h1>
+              </div>
+
+              <div class="page-header__description-wrap">
+                <p class="page-header__description">
+                  It is a long established fact that a reader will be distracted by
+                  the readable content of a page when looking at its layout.
+                </p>
+              </div>
+
+              <div class="page-header__actions">
+                <button class="page-header__button" type="button">
+                  <span class="page-header__button-text">Lorem Ipsum</span>
+                  <span class="page-header__button-icon">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1458 7.5H0V5.83333H10.1458L5.47917 1.16667L6.66667 0L13.3333 6.66667L6.66667 13.3333L5.47917 12.1667L10.1458 7.5Z" fill="#ffffff"/>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="page-header__content-right">
+              <div class="page-header__card">
+                <div class="page-header__card-top">
+                  <div class="page-header__card-dots">
+                    <span class="page-header__dot page-header__dot--red"></span>
+                    <span class="page-header__dot page-header__dot--yellow"></span>
+                    <span class="page-header__dot page-header__dot--green"></span>
+                  </div>
+
+                  <span class="page-header__card-top-line"></span>
+                </div>
+
+                <div class="page-header__card-body">
+                  <div class="page-header__sidebar">
+                    <span class="page-header__sidebar-line page-header__sidebar-line--1"></span>
+                    <span class="page-header__sidebar-line page-header__sidebar-line--2"></span>
+
+                    <div class="page-header__sidebar-footer">
+                      <span class="page-header__sidebar-highlight"></span>
+                    </div>
+                  </div>
+
+                  <div class="page-header__main-panels">
+                    <div class="page-header__chart"></div>
+
+                    <div class="page-header__panels-row">
+                      <div class="page-header__panel"></div>
+                      <div class="page-header__panel"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main__container">
+        <section class="section section-video">
+          <div class="section-video__header">
+            <h2 class="section-video__title">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            </h2>
+
+            <p class="section-video__description">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+          </div>
+
+          <div class="section-video__media" id="videoPlayerContainer">
+            <div id="youtube-player" class="section-video__iframe" data-video-id="zrHgnN39zHY"></div>
+
+            <div class="section-video__overlay"></div>
+
+            <div class="section-video__play-center">
+              <button
+                class="section-video__play-button"
+                id="videoCenterPlayButton"
+                type="button"
+                aria-label="Reproduzir ou pausar vídeo"
+              >
+                <span class="section-video__play-icon" id="videoCenterPlayIcon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                    <path d="M8 5v14l11-7z"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="section-video__controls">
+              <div class="section-video__controls-row">
+                <button
+                  class="section-video__control-button"
+                  id="videoPlayPauseButton"
+                  type="button"
+                  aria-label="Play ou pause"
+                >
+                  <span id="videoPlayPauseIcon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+
+                <div
+                  class="section-video__progress"
+                  id="videoProgressBar"
+                  role="slider"
+                  aria-label="Progresso do vídeo"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                  tabindex="0"
+                >
+                  <div class="section-video__progress-fill" id="videoProgressFill"></div>
+                </div>
+
+                <div class="section-video__time" id="videoTimeDisplay">0:00</div>
+
+                <button
+                  class="section-video__control-button"
+                  id="videoMuteButton"
+                  type="button"
+                  aria-label="Ativar ou desativar som"
+                >
+                  <span id="videoMuteIcon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                      <path d="M3 9v6h4l5 5V4L7 9H3z"></path>
+                      <path d="M16 7c1.5 1.5 1.5 8.5 0 10" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"></path>
+                      <path d="M19 4c3 3 3 13 0 16" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"></path>
+                    </svg>
+                  </span>
+                </button>
+
+                <div
+                  class="section-video__volume"
+                  id="videoVolumeBar"
+                  role="slider"
+                  aria-label="Volume"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="100"
+                  tabindex="0"
+                >
+                  <div class="section-video__volume-fill" id="videoVolumeFill"></div>
+                  <span class="section-video__volume-thumb" id="videoVolumeThumb"></span>
+                </div>
+
+                <button
+                  class="section-video__control-button"
+                  id="videoCaptionsButton"
+                  type="button"
+                  aria-label="Legendas"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                    <path d="M21 4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM10 15H8c-1.1 0-2-.9-2-2s.9-2 2-2h2v2H8v2h2v2zm6 0h-2c-1.1 0-2-.9-2-2s.9-2 2-2h2v2h-2v2h2v2z"></path>
+                  </svg>
+                </button>
+
+                <button
+                  class="section-video__control-button"
+                  id="videoFullscreenButton"
+                  type="button"
+                  aria-label="Tela cheia"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                    <path d="M7 14H5v5h5v-2H7zM19 19h-5v-2h3v-3h2zM7 7h3V5H5v5h2zM19 5h-5v2h3v3h2z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section section-side-image">
+          <div class="section-side-image__container">
+            <div class="section-side-image__media">
+              <img
+                src="assets/images/Nature waves crashing.svg"
+                alt="Nature waves crashing"
+                class="section-side-image__image"
+              />
+            </div>
+
+            <div class="section-side-image__content">
+              <div class="section-side-image__text-group">
+                <p class="section-side-image__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit voluptatum voluptatibus aperiam cum quasi repudiandae nostrum, sed amet quam maiores eum consectetur ipsa dolores quis ducimus, iusto dicta consequuntur facere!
+                </p>
+              </div>
+
+              <div class="section-side-image__text-group">
+                <p class="section-side-image__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quia! Cumque ipsum harum fuga perferendis autem incidunt dolorem voluptatum illo, quis explicabo. Possimus repudiandae dolore architecto, hic dolorum ab.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section section-slider">
+          <div class="section-slider__container">
+            <div class="section-slider__image-wrapper">
+              <div class="section-slider__track">
+                <figure>
+                  <img
+                    src="assets/images/landscape-morning-fog-mountains-with-hot-air-balloons-sunrise.png"
+                    alt="paisagem de nevoeiro matinal e montanhas com baloes de ar quente ao nascer do sol"
+                    class="section-slider__image"
+                  />
+                  <figcaption>Autor: tawatchai07 / Fonte: Freepik</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="assets/images/lot-rock-formations-covered-with-moss-near-sea-sunset-sky.png"
+                    alt="muitas formacoes rochosas cobertas de musgo perto do mar sob o ceu do por do sol"
+                    class="section-slider__image"
+                  />
+                  <figcaption>Autor: wirestock / Fonte: Freepik</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="assets/images/environment-scenic-angry-envelop-showing.png"
+                    alt="ambiente cenico mostrando envelope irritado"
+                    class="section-slider__image"
+                  />
+                  <figcaption>Autor: creativeart / Fonte: Freepik</figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="section-slider__controls">
+              <button
+                class="section-slider__arrow-button section-slider__arrow-button--prev"
+                id="prevBtn"
+                type="button"
+                aria-label="Slide anterior"
+              >
+                <span class="section-slider__arrow section-slider__arrow--left"></span>
+              </button>
+
+              <div class="section-slider__dots" id="dots">
+                <span class="section-slider__dot"></span>
+                <span class="section-slider__dot section-slider__dot--active"></span>
+                <span class="section-slider__dot"></span>
+              </div>
+
+              <button
+                class="section-slider__arrow-button section-slider__arrow-button--next"
+                id="nextBtn"
+                type="button"
+                aria-label="Próximo slide"
+              >
+                <span class="section-slider__arrow section-slider__arrow--right"></span>
+              </button>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section section-highlight">
+          <div class="section-highlight__container">
+            <div class="section-highlight__overlay"></div>
+
+            <div class="section-highlight__content">
+              <p class="section-highlight__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore nihil corporis suscipit soluta dolorem id consectetur, tenetur nesciunt ducimus maiores sequi veritatis nostrum, esse eaque delectus ea laboriosam repellendus! Ipsum nobis, mollitia facilis praesentium cupiditate quidem eaque itaque nulla ab obcaecati sapiente sequi porro, totam, non molestias excepturi explicabo adipisci deleniti architecto animi!
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section section-cards">
+          <div class="section-cards__container">
+            <article class="section-cards__card section-cards__card--left" data-card>
+              <div class="section-cards__closed-content">
+                <div class="section-cards__icon-wrap">
+                  <span class="section-cards__icon">?</span>
+                </div>
+
+                <div class="section-cards__button-wrap">
+                  <button
+                    class="section-cards__button section-cards__button--open"
+                    type="button"
+                    data-open-card
+                  >
+                    Abrir
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="section-cards__card section-cards__card--center"
+              data-card-expanded
+              aria-hidden="true"
+            >
+              <div class="section-cards__expanded-content">
+                <div class="section-cards__expanded-text">
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <p>consectetur adipisicing elit.</p>
+                  <p>Saepe excepturi, dolores</p>
+                  <p>perspiciatis commodi eum</p>
+                  <p>dolore nesciunt tempore</p>
+                  <p>similique at quas.</p>
+                </div>
+
+                <button
+                  class="section-cards__button section-cards__button--close"
+                  type="button"
+                  data-close-card
+                >
+                  Fechar
+                </button>
+              </div>
+            </article>
+
+            <article class="section-cards__card section-cards__card--right" data-card>
+              <div class="section-cards__closed-content">
+                <div class="section-cards__icon-wrap">
+                  <span class="section-cards__icon">?</span>
+                </div>
+
+                <div class="section-cards__button-wrap">
+                  <button
+                    class="section-cards__button section-cards__button--open"
+                    type="button"
+                    data-open-card
+                  >
+                    Abrir
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+  
+        <section class="section section-text">
+          <div class="section-text__container">
+            <div class="section-text__heading">
+              <h1 class="section-text__title">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit
+              </h1>
+            </div>
+
+            <div class="section-text__content">
+              <p class="section-text__description">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section section-podcast">
+          <div class="section-podcast__container">
+            <audio
+              class="section-podcast__audio"
+              id="podcastAudio"
+              preload="metadata"
+              src="./assets/audio/pódcast.mp3"
+            ></audio>
+
+            <button
+              class="section-podcast__play-button"
+              id="podcastPlayButton"
+              type="button"
+              aria-label="Reproduzir ou pausar áudio"
+            >
+              <span
+                class="section-podcast__play-icon section-podcast__play-icon--play"
+                id="podcastPlayIcon"
+              ></span>
+            </button>
+
+            <div
+              class="section-podcast__progress"
+              id="podcastProgress"
+              role="slider"
+              aria-label="Progresso do áudio"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="65"
+              tabindex="0"
+            >
+              <div class="section-podcast__progress-fill" id="podcastProgressFill"></div>
+              <span class="section-podcast__progress-thumb" id="podcastProgressThumb"></span>
+            </div>
+
+            <div class="section-podcast__time" id="podcastTime">03:03</div>
+
+            <div class="section-podcast__volume-control">
+              <button
+                class="section-podcast__icon-button"
+                id="podcastMuteButton"
+                type="button"
+                aria-label="Ativar ou desativar som"
+              >
+                <span
+                  class="section-podcast__volume-icon"
+                  id="podcastVolumeIcon"
+                ></span>
+              </button>
+
+              <div
+                class="section-podcast__volume"
+                id="podcastVolume"
+                role="slider"
+                aria-label="Volume do áudio"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="66"
+                tabindex="0"
+              >
+                <div class="section-podcast__volume-fill" id="podcastVolumeFill"></div>
+                <span class="section-podcast__volume-thumb" id="podcastVolumeThumb"></span>
+              </div>
+            </div>
+
+            <div class="section-podcast__settings-wrap">
+              <button
+                class="section-podcast__settings-button"
+                id="podcastSettingsButton"
+                type="button"
+                aria-label="Configurações"
+                aria-expanded="false"
+              >
+                <span class="section-podcast__settings-icon"></span>
+              </button>
+
+              <div
+                class="section-podcast__settings-menu"
+                id="podcastSettingsMenu"
+                hidden
+              >
+                <button
+                  type="button"
+                  class="section-podcast__settings-option"
+                  data-speed="0.75"
+                >
+                  Velocidade 0.75x
+                </button>
+
+                <button
+                  type="button"
+                  class="section-podcast__settings-option"
+                  data-speed="1"
+                >
+                  Velocidade 1x
+                </button>
+
+                <button
+                  type="button"
+                  class="section-podcast__settings-option"
+                  data-speed="1.25"
+                >
+                  Velocidade 1.25x
+                </button>
+
+                <button
+                  type="button"
+                  class="section-podcast__settings-option"
+                  data-speed="1.5"
+                >
+                  Velocidade 1.5x
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section section-discursive-activity">
+          <div class="section-discursive-activity__container">
+            <div class="section-discursive-activity__header">
+              <div class="section-discursive-activity__icon-wrapper">
+                <span class="section-discursive-activity__icon"></span>
+              </div>
+
+              <div class="section-discursive-activity__header-content">
+                <div class="section-discursive-activity__title-wrapper">
+                  <h3 class="section-discursive-activity__title">Atividade discursiva</h3>
+                </div>
+
+                <div class="section-discursive-activity__description-wrapper">
+                  <p class="section-discursive-activity__description">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-discursive-activity__textarea-wrapper">
+              <div class="section-discursive-activity__textarea-inner">
+                <textarea
+                  class="section-discursive-activity__textarea"
+                  id="discursiveTextarea"
+                  placeholder="Digite sua resposta aqui..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="section-discursive-activity__actions">
+              <button
+                class="section-discursive-activity__button section-discursive-activity__button--answer"
+                id="discursiveAnswerButton"
+                type="button"
+              >
+                Responder
+              </button>
+
+              <button
+                class="section-discursive-activity__button section-discursive-activity__button--edit"
+                id="discursiveEditButton"
+                type="button"
+                disabled
+              >
+                Alterar
+              </button>
+            </div>
+
+            <div
+              class="section-discursive-activity__feedback"
+              id="discursiveFeedback"
+              hidden
+            >
+              <div class="section-discursive-activity__feedback-title-wrapper">
+                <h4 class="section-discursive-activity__feedback-title">É isso aí!</h4>
+              </div>
+
+              <div class="section-discursive-activity__feedback-text-wrapper">
+                <p class="section-discursive-activity__feedback-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur commodi odio maiores accusamus aspernatur consequatur ipsam dignissimos magnam hic, velit est perferendis explicabo aperiam ratione veritatis labore.
+                </p>
+              </div>
+
+              <button
+                class="section-discursive-activity__feedback-close"
+                id="discursiveFeedbackClose"
+                type="button"
+                aria-label="Fechar feedback"
+              >
+                <span class="section-discursive-activity__feedback-close-icon"></span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-objective-activity">
+          <div class="section-objective-activity__container">
+            <div class="section-objective-activity__header">
+              <div class="section-objective-activity__icon-wrapper">
+                <span class="section-objective-activity__icon"></span>
+              </div>
+
+              <div class="section-objective-activity__header-content">
+                <div class="section-objective-activity__title-wrapper">
+                  <h3 class="section-objective-activity__title">Atividade Objetiva</h3>
+                </div>
+
+                <div class="section-objective-activity__description-wrapper">
+                  <p class="section-objective-activity__description">
+                    It is a long established fact that a reader will be distracted by the readable content of a page.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-objective-activity__options">
+              <label class="section-objective-activity__option" data-option="A">
+                <span class="section-objective-activity__option-check-wrap">
+                  <span class="section-objective-activity__checkbox">
+                    <span class="section-objective-activity__checkbox-icon"></span>
+                  </span>
+                </span>
+
+                <span class="section-objective-activity__option-content">
+                  <span class="section-objective-activity__option-text">
+                    A) Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+                </span>
+              </label>
+
+              <label class="section-objective-activity__option" data-option="B">
+                <span class="section-objective-activity__option-check-wrap">
+                  <span class="section-objective-activity__checkbox">
+                    <span class="section-objective-activity__checkbox-icon"></span>
+                  </span>
+                </span>
+
+                <span class="section-objective-activity__option-content">
+                  <span class="section-objective-activity__option-text">
+                    B) Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+                </span>
+              </label>
+
+              <label class="section-objective-activity__option" data-option="C">
+                <span class="section-objective-activity__option-check-wrap">
+                  <span class="section-objective-activity__checkbox">
+                    <span class="section-objective-activity__checkbox-icon"></span>
+                  </span>
+                </span>
+
+                <span class="section-objective-activity__option-content">
+                  <span class="section-objective-activity__option-text">
+                    C) Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+                </span>
+              </label>
+
+              <label class="section-objective-activity__option" data-option="D">
+                <span class="section-objective-activity__option-check-wrap">
+                  <span class="section-objective-activity__checkbox">
+                    <span class="section-objective-activity__checkbox-icon"></span>
+                  </span>
+                </span>
+
+                <span class="section-objective-activity__option-content">
+                  <span class="section-objective-activity__option-text">
+                    D) Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+                </span>
+              </label>
+            </div>
+
+            <div class="section-objective-activity__actions">
+              <button
+                class="section-objective-activity__button section-objective-activity__button--answer"
+                id="objectiveAnswerButton"
+                type="button"
+                disabled
+              >
+                Responder
+              </button>
+
+              <button
+                class="section-objective-activity__button section-objective-activity__button--edit"
+                id="objectiveEditButton"
+                type="button"
+                disabled
+              >
+                Alterar
+              </button>
+            </div>
+
+            <div
+              class="section-objective-activity__feedback"
+              id="objectiveFeedback"
+              hidden
+            >
+              <div class="section-objective-activity__feedback-title-wrapper">
+                <h4 class="section-objective-activity__feedback-title">Tente novamente!</h4>
+              </div>
+
+              <div class="section-objective-activity__feedback-text-wrapper">
+                <p class="section-objective-activity__feedback-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur commodi odio maiores accusamus aspernatur consequatur ipsam dignissimos magnam hic, velit est perferendis explicabo aperiam ratione veritatis labore.
+                </p>
+              </div>
+
+              <button
+                class="section-objective-activity__feedback-close"
+                id="objectiveFeedbackClose"
+                type="button"
+                aria-label="Fechar feedback"
+              >
+                <span class="section-objective-activity__feedback-close-icon"></span>
+              </button>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section section-accordion">
+          <div class="section-accordion__container">
+            <div class="section-accordion__header">
+              <div class="section-accordion__title-wrapper">
+                <h2 class="section-accordion__title">Perguntas frequentes</h2>
+              </div>
+
+              <div class="section-accordion__description-wrapper">
+                <p class="section-accordion__description">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+              </div>
+            </div>
+
+            <div class="section-accordion__list">
+              <details class="section-accordion__item" open>
+                <summary class="section-accordion__summary">
+                  <span class="section-accordion__summary-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+                  <span class="section-accordion__summary-icon"></span>
+                </summary>
+
+                <div class="section-accordion__content">
+                  <p class="section-accordion__content-text">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  </p>
+                </div>
+              </details>
+
+              <details class="section-accordion__item">
+                <summary class="section-accordion__summary">
+                  <span class="section-accordion__summary-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+                  <span class="section-accordion__summary-icon"></span>
+                </summary>
+
+                <div class="section-accordion__content">
+                  <p class="section-accordion__content-text">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  </p>
+                </div>
+              </details>
+
+              <details class="section-accordion__item">
+                <summary class="section-accordion__summary">
+                  <span class="section-accordion__summary-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+                  <span class="section-accordion__summary-icon"></span>
+                </summary>
+
+                <div class="section-accordion__content">
+                  <p class="section-accordion__content-text">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  </p>
+                </div>
+              </details>
+
+              <details class="section-accordion__item">
+                <summary class="section-accordion__summary">
+                  <span class="section-accordion__summary-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+                  <span class="section-accordion__summary-icon"></span>
+                </summary>
+
+                <div class="section-accordion__content">
+                  <p class="section-accordion__content-text">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__content">
+          <div class="page-footer__logo" aria-label="DOT Digital Group">
+            <svg
+              class="page-footer__logo-svg"
+              width="145"
+              height="42"
+              viewBox="0 0 145 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <g>
+                <path
+                  d="M21 6C11.6 6 4 13.6 4 23C4 32.4 11.6 40 21 40C30.4 40 38 32.4 38 23C38 13.6 30.4 6 21 6ZM21 31.5C16.3 31.5 12.5 27.7 12.5 23C12.5 18.3 16.3 14.5 21 14.5C25.7 14.5 29.5 18.3 29.5 23C29.5 27.7 25.7 31.5 21 31.5Z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M51 6C41.6 6 34 13.6 34 23C34 32.4 41.6 40 51 40C60.4 40 68 32.4 68 23C68 13.6 60.4 6 51 6ZM51 31.5C46.3 31.5 42.5 27.7 42.5 23C42.5 18.3 46.3 14.5 51 14.5C55.7 14.5 59.5 18.3 59.5 23C59.5 27.7 55.7 31.5 51 31.5Z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M71 4H83V38H71V4Z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M90 10H96.5C103.9 10 109 14.5 109 21C109 27.5 103.9 32 96.5 32H90V10ZM96 27C100 27 102.5 24.8 102.5 21C102.5 17.2 100 15 96 15H95.8V27H96Z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M111.5 10H124.5V14.8H117V18.4H123.5V23H117V27.2H124.8V32H111.5V10Z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M127.2 10H132.7V27.2H142V32H127.2V10Z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M83 38L92 38L92 42L83 42L83 38Z"
+                  fill="#76B900"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <div class="page-footer__copyright">
+            © 2026 DOT Digital Group. Todos os direitos reservados.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
