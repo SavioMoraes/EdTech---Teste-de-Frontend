@@ -1,3 +1,20 @@
+const SLIDER_STORAGE_KEY = "edtech:slider";
+
+function getSliderStorage() {
+  const savedIndex = sessionStorage.getItem(SLIDER_STORAGE_KEY);
+  const parsedIndex = Number(savedIndex);
+
+  if (Number.isNaN(parsedIndex) || parsedIndex < 1) {
+    return 1;
+  }
+
+  return parsedIndex;
+}
+
+function setSliderStorage(index) {
+  sessionStorage.setItem(SLIDER_STORAGE_KEY, String(index));
+}
+
 export function initSlider() {
   const track = document.querySelector(".section-slider__track");
   const slides = document.querySelectorAll(".section-slider__image");
@@ -9,8 +26,12 @@ export function initSlider() {
     return;
   }
 
-  let currentIndex = 1;
   const slideWidth = 958;
+  let currentIndex = getSliderStorage();
+
+  if (currentIndex > slides.length) {
+    currentIndex = 1;
+  }
 
   function updateSlider() {
     track.style.transform = `translateX(-${(currentIndex - 1) * slideWidth}px)`;
@@ -21,6 +42,8 @@ export function initSlider() {
 
     prevBtn.disabled = currentIndex === 1;
     nextBtn.disabled = currentIndex === slides.length;
+
+    setSliderStorage(currentIndex);
   }
 
   prevBtn.addEventListener("click", () => {
