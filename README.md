@@ -45,7 +45,7 @@ npm run dev
 Acesse no navegador:
 
 http://localhost:3000
-💡 O projeto utiliza um servidor local (Vite ou similar) para melhor performance e hot reload.
+💡 O projeto utiliza um servidor local para melhor performance e hot reload.
 🧠 Decisões técnicas
 🔹 Estrutura baseada em separação de responsabilidades
 O projeto foi dividido em módulos independentes para facilitar manutenção e escalabilidade:
