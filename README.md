@@ -1,5 +1,7 @@
 # 🚀 Projeto Frontend Interativo
 
+https://saviomoraes.github.io/EdTech---Teste-de-Frontend/
+
 Aplicação frontend desenvolvida com foco em **fidelidade ao layout, interatividade e experiência do usuário**, utilizando HTML, CSS e JavaScript puro, com execução via ambiente moderno de desenvolvimento.
 
 ---
